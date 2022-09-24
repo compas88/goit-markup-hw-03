@@ -14,7 +14,6 @@
 body {
     font-family: roboto, sans-serif;
     color: var(--primary-title-color);
-    background-color: var(--primary-bg-color);
 }
 
 a {
@@ -25,11 +24,30 @@ li {
     list-style: none;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
 
 /* Header */
 
 .header {
     background-color: var(--primary-white-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -71,6 +89,8 @@ li {
 
 .footer {
     background-color: var(--footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo.white {
@@ -100,12 +120,19 @@ li {
 .hero {
     color: var(--primary-white-color);
     background-color: var(--footer-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .title-hero {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: 452px;
+    margin-right: 452px;
 }
 
 .button-hero {
@@ -117,6 +144,9 @@ li {
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: transparent;
 }
 
 
@@ -131,22 +161,42 @@ li {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
+        text-transform: uppercase;
 }
 
 .benefits-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+
+.benefits .container {
+    padding-top: 94px;
 }
 
 
 /* Services */
+
+.services {
+    background-color: var(--primary-bg-color)
+}
 
 .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.services .title {
+    margin-bottom: 50px;
 }
 
 
@@ -161,6 +211,8 @@ li {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -168,6 +220,11 @@ li {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.team .title {
+    margin-bottom: 50px;
 }
 
 /* PORTFOLIO */
@@ -181,6 +238,11 @@ li {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    border: transparent;
+    margin-bottom: 50px;
 }
 
 .button-projects:hover,
@@ -195,6 +257,8 @@ li {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .projects-text {
@@ -202,4 +266,5 @@ li {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    padding-bottom: 20px;
 }
