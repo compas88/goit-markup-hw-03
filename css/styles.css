@@ -26,6 +26,8 @@ li {
 
 .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,11 +48,10 @@ ul {
 
 .header {
     background-color: var(--primary-white-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .logo {
+    margin-right: 93px;
     color: var(--primary-accent-color);
     font-family: raleway, sans-serif;
     font-weight: 700;
@@ -60,12 +61,37 @@ ul {
 }
 
 .logo.black {
+    margin: 0px;
     color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list + .header-list {
+    margin-left: auto;
+}
+
+.nav-header-list {
+    margin-right: 50px;
+}
+
+.nav-header-list:last-child {
+    margin-right: 0px;
 }
 
 .header-list-nav,
 .header-list-email,
 .header-list-tel {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-title-color);
     font-weight: 500;
     font-size: 14px;
@@ -93,6 +119,10 @@ ul {
     padding-bottom: 60px;
 }
 
+.footer .logo {
+    margin: 0px;
+}
+
 .logo.white {
     color: var(--primary-white-color)
 }
@@ -101,7 +131,16 @@ ul {
     list-style: none;
 }
 
+address {
+    margin-top: 20px;
+}
+
+.address-item + .address-item {
+    margin-top: 9px;
+}
+
 .footer-list-address {
+    display: block;
     color: var(--primary-white-color);
     font-style: normal;
     font-size: 14px;
@@ -131,8 +170,6 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-    margin-left: 452px;
-    margin-right: 452px;
 }
 
 .button-hero {
@@ -154,6 +191,18 @@ ul {
 
 .benefits {
     background-color: var(--primary-bg-color);
+}
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-list-item {
+    width: calc((100% - 90px) / 4);
+}
+
+.benefits-list-item + .benefits-list-item {
+    margin-left: 30px;
 }
 
 .benefits-subtitle {
@@ -182,6 +231,25 @@ ul {
     background-color: var(--primary-bg-color)
 }
 
+.services-list {
+    display: flex;
+    justify-content: center;
+}
+
+.services-item {
+    display: block;
+}
+
+.services-item + .services-item {
+    margin-left: 30px;
+}
+
+.services-item img {
+    display: block;
+}
+
+
+
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -206,21 +274,34 @@ ul {
     background-color: var(--secondary-bg-color);
 }
 
+.team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-item + .team-item{
+    margin-left: 30px;
+}
+
 .team-subtitle {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    
 }
 
 .team-text {
+    text-align: center;
+    margin-bottom: 30px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    
 }
 
 .team .title {
