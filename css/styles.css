@@ -167,6 +167,7 @@ address {
 
 .title-hero {
     font-size: 44px;
+    font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -190,7 +191,19 @@ address {
 
 /* Benefits */
 
+.visually-hidden {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .benefits {
+    padding-top: 94px;
     background-color: var(--primary-bg-color);
 }
 
@@ -220,10 +233,6 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em;
     margin-top: 10px;
-}
-
-.benefits .container {
-    padding-top: 94px;
 }
 
 
@@ -285,9 +294,13 @@ address {
     margin-left: 30px;
 }
 
+.subtitle-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-subtitle {
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -298,7 +311,6 @@ address {
 
 .team-text {
     text-align: center;
-    margin-bottom: 30px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
